@@ -1,0 +1,39 @@
+class Solution {
+    void pushZerosToEnd(int[] arr) {
+        int n = arr.length;
+        int x = 0;
+        for(int i = 0; i<n; i++){
+            if(arr[i]!=0){
+                arr[x++] = arr[i];
+            }
+        }
+        while(x<n){
+            arr[x++] = 0;
+        }
+        
+        
+    }
+}
+
+=====================================================================================================================================================================
+2nd method:-
+
+
+class Solution {
+    void pushZerosToEnd(int[] arr) {
+        // code here
+        int n = arr.length;
+        int []b = new int[n];
+        int x = 0;
+        for(int i = 0; i<n; i++){
+            if(arr[i]!=0){
+                b[x++] = arr[i];
+                
+            }
+        }
+        for(int i = 0; i<n; i++){
+            arr[i] = b[i];
+        }
+        
+    }
+}
