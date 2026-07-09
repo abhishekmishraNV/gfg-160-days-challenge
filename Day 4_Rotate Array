@@ -1,6 +1,9 @@
 //Right rotation
 class Solutio{
 public static voidvrotatate Array(int[]arr,int d){
+
+  int n = arr.length;
+
   if(n<=1) return;
 
   d = d%n 
@@ -17,12 +20,15 @@ while(left<right){
 int temp = arr[left];
 arr[left] = arr[right];
 arr[right] = temp;
+left++;
+right--;
 }
 }
 }
 //left rotation
 class Solution {
 public static voidvrotatate Array(int[]arr,int d){
+  int n = arr.length;
   if(n<=1) return;
 
   d = d%n 
@@ -39,6 +45,8 @@ while(left<right){
 int temp = arr[left];
 arr[left] = arr[right];
 arr[right] = temp;
+left++;
+right--;
 }
 }
 
