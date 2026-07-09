@@ -1,0 +1,13 @@
+Right rotation
+public static rotatate Array(int[]arr,int d){
+  if(n<=1) return;
+
+  d = d%n 
+  if(d==0) return;
+
+  reverse(arr,0,n-1);
+
+  reverse(arr,k,n-1);
+
+  reverse(arr,
+}
